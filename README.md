@@ -4,6 +4,15 @@
 
 SaxBI is a JAX implementation of likelihood-free simulation-based inference (sbi) methods. Currently, the two algorithms used are Sequential Neural Likelihood Estimation (SNLE) and Sequential Neural Ratio Estimation (SNRE). This package offers a simple, functional API for carrying out the approximate posterior inference.
  
+ 
+### The fully automated pipeline features:
+
+ * [Flax](https://github.com/google/flax)-based autoregressive normalizing flows with affine, piecewise affine, and piecewise rational quadratic splines
+ * [Flax](https://github.com/google/flax)-based classifiers with/out residual skip connections
+ * Hamiltonian Monte Carlo sampling with NUTS kernels implemented in [Numpyro](https://github.com/pyro-ppl/numpyro)
+ * And more! 
+ * Probably some bugs too... Let me know what you find 😅
+ 
 # Installation
 
 `saxbi` requires python 3.9 or higher. It can be easily installed from the repository's home directory with 
